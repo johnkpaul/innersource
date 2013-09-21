@@ -1,0 +1,15 @@
+{
+  "name": "innersource",
+  "version": "0.0.1",
+  "description": "Get the source of a function as a string.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test",
+    "hint": "jshint --config .jshintrc ."
+  },
+  "author": "John K. Paul",
+  "license": "MIT",
+  "devDependencies": {
+    "jshint": "~2.1.11"
+  }
+}
