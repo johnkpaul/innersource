@@ -27,3 +27,12 @@ function   test4() {
 }
 
 assert.equal(innersource(test4).trim(), "console.log('hello');");
+
+function test5() {}
+
+assert.equal(innersource(test5).trim(), "");
+
+function test6() {
+}
+
+assert.equal(innersource(test6).trim(), "");
