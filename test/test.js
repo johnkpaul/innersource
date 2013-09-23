@@ -36,3 +36,12 @@ function test6() {
 }
 
 assert.equal(innersource(test6).trim(), "");
+
+function test7() {
+  if (true) {
+    console.log('abc');
+  }
+}
+
+assert.equal(innersource(test7).trim(), "if (true) {\n    console.log(\'abc\');\n  }");
+
