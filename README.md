@@ -1,10 +1,12 @@
 # innersource
 
-module to get the source of a function as a string
+Returns inner source of a function as a string.
 
 ## Usage
 
 ```javascript
+var innersource = require('innersource');
+
 function test1() {
   console.log('hello');
 }
