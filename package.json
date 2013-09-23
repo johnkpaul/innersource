@@ -1,7 +1,7 @@
 {
   "name": "innersource",
   "version": "0.0.1",
-  "description": "Get the source of a function as a string.",
+  "description": "Returns inner source of a function as a string.",
   "main": "index.js",
   "scripts": {
     "test": "node test/test",
