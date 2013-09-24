@@ -45,3 +45,19 @@ function test7() {
 
 assert.equal(innersource(test7).trim(), "if (true) {\n    console.log(\'abc\');\n  }");
 
+function test8(arg1) {
+  if (true) {
+    console.log('abc');
+  }
+}
+
+assert.equal(innersource(test8).trim(), "if (true) {\n    console.log(\'abc\');\n  }");
+
+function test9(arg1, arg2) {
+  if (true) {
+    console.log('abc');
+  }
+}
+
+assert.equal(innersource(test9).trim(), "if (true) {\n    console.log(\'abc\');\n  }");
+
