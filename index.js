@@ -1,7 +1,9 @@
 'use strict';
-var regex = /function\s{0,}\w*\([^)]*\)\s{0,}\{([\s\S]*)\}/,
-	toString = Function.prototype.toString;
 
-module.exports = function innersource(func){
-  return toString.call(func).match(regex)[1];
+var toString = Function.prototype.toString;
+
+module.exports = function (fn) {
+  if (typeof fn !== 'function') return;
+  var s = toString.call(fn);
+  return s.slice(s.indexOf('{') + 1, s.lastIndexOf('}'));
 };

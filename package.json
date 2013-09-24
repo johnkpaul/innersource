@@ -4,8 +4,8 @@
   "description": "Returns inner source of a function as a string.",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test",
-    "hint": "jshint --config .jshintrc ."
+    "pretest": "jshint --config .jshintrc .",
+    "test": "node test/test"
   },
   "author": "John K. Paul",
   "license": "MIT",
