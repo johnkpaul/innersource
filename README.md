@@ -1,6 +1,12 @@
 # innersource
 
-Returns inner source of a function as a string.
+Returns inner source (the body) of a function as a string.
+
+## Install
+
+```shell
+$ npm install innersource
+```
 
 ## Usage
 
@@ -12,4 +18,10 @@ function test1() {
 }
 
 console.log(innersource(test1)); //  console.log('hello');
+```
+
+## Test
+
+```shell
+$ npm test
 ```
