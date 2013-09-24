@@ -70,3 +70,8 @@ test10.toString = function(){
 
 assert.equal(innersource(test10).trim(), "return \"what you expect\"");
 
+function test11(arg1 /*LKAJSD*/){
+  console.log('hello');
+};
+
+assert.equal(innersource(test11).trim(), "console.log('hello');");

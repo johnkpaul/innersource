@@ -1,5 +1,5 @@
 'use strict';
-var regex = /function\s{0,}\w*\([\w,\s]*\)\s{0,}\{([\s\S]*)\}/,
+var regex = /function\s{0,}\w*\([^)]*\)\s{0,}\{([\s\S]*)\}/,
 	toString=Function.prototype.toString;
 
 module.exports = function innersource(func){
