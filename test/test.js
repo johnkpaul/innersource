@@ -61,3 +61,12 @@ function test9(arg1, arg2) {
 
 assert.equal(innersource(test9).trim(), "if (true) {\n    console.log(\'abc\');\n  }");
 
+
+function test10(){return "what you expect"};
+
+test10.toString = function(){
+  return "!what you get;";
+}
+
+assert.equal(innersource(test10).trim(), "return \"what you expect\"");
+
