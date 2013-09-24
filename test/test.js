@@ -1,6 +1,5 @@
 'use strict';
 
-var fs = require('fs');
 var assert = require('assert');
 var innersource = require('../index');
 
@@ -61,7 +60,6 @@ function test9(arg1, arg2) {
 
 assert.equal(innersource(test9).trim(), "if (true) {\n    console.log(\'abc\');\n  }");
 
-
 function test10(){return "what you expect";}
 
 test10.toString = function(){
@@ -75,3 +73,5 @@ function test11(arg1 /*LKAJSD*/){
 }
 
 assert.equal(innersource(test11).trim(), "console.log('hello');");
+
+assert.equal(innersource(1), undefined);
