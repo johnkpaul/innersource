@@ -75,3 +75,9 @@ function test11(arg1 /*LKAJSD*/){
 }
 
 assert.equal(innersource(test11).trim(), "console.log('hello');");
+
+function $test12(){
+  console.log('hello');
+}
+
+assert.equal(innersource($test12).trim(), "console.log('hello');");
