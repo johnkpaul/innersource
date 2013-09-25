@@ -1,6 +1,6 @@
 {
   "name": "innersource",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Returns inner source of a function as a string.",
   "main": "index.js",
   "scripts": {
